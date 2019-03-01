@@ -138,7 +138,7 @@ install_centos_ssr(){
 	./configure && make -j2 && make install
 	echo /usr/local/lib > /etc/ld.so.conf.d/usr_local_lib.conf
 	ldconfig
-	git clone -b manyuser https://github.com/Anankke/shadowsocks.git  "/root/shadowsocks"
+	git clone -b manyuser https://github.com/NimaQu/shadowsocks.git  "/root/shadowsocks"
 	cd /root/shadowsocks
 	chkconfig supervisord on
 	#第一次安装
