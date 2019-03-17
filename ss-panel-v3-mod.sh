@@ -388,9 +388,9 @@ echo "# One click Install SS-panel and Shadowsocks-Py-Mu          #"
 echo "# Github: https://github.com/mmmwhy/ss-panel-and-ss-py-mu   #"
 echo "# Author: 91vps                                             #"
 echo "# Please choose the server you want                         #"
-echo "# 1  SS-V3_mod_前端+后端一键安装                             #"
-echo "# 2  后端节点modwebapi-接模式                                #"
-echo "# 3  后端节点数据库对接模式                                   #"
+echo "# 1  SS-V3_mod_前端+后端一键安装                            #"
+echo "# 2  后端节点modwebapi-接模式                               #"
+echo "# 3  后端节点数据库对接模式                                  #"
 echo "#############################################################"
 echo
 num=$1
