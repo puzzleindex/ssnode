@@ -131,7 +131,8 @@ install_centos_ssr(){
     easy_install supervisor
     supervisord
 	fi
-	pip install --upgrade pip
+	python -m pip install --upgrade --force pip
+	pip install setuptools==33.1.1
 	Libtest
 	wget --no-check-certificate $libAddr
 	tar xf libsodium-1.0.15.tar.gz && cd libsodium-1.0.15
