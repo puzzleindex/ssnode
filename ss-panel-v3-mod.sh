@@ -51,9 +51,9 @@ Libtest(){
 	echo "$LIB_PING $LIB" >> ping.pl
 	libAddr=`sort -V ping.pl|sed -n '1p'|awk '{print $2}'`
 	if [ "$libAddr" == "$GIT" ];then
-		libAddr='https://raw.githubusercontent.com/mmmwhy/ss-panel-and-ss-py-mu/master/libsodium-1.0.13.tar.gz'
+		libAddr='http://ssr-1252089354.coshk.myqcloud.com/libsodium-1.0.15.tar.gz'
 	else
-		libAddr='https://download.libsodium.org/libsodium/releases/libsodium-1.0.13.tar.gz'
+		libAddr='http://ssr-1252089354.coshk.myqcloud.com/libsodium-1.0.15.tar.gz'
 	fi
 	rm -f ping.pl		
 }
@@ -134,7 +134,7 @@ install_centos_ssr(){
 	pip install --upgrade pip
 	Libtest
 	wget --no-check-certificate $libAddr
-	tar xf libsodium-1.0.13.tar.gz && cd libsodium-1.0.13
+	tar xf libsodium-1.0.15.tar.gz && cd libsodium-1.0.15
 	./configure && make -j2 && make install
 	echo /usr/local/lib > /etc/ld.so.conf.d/usr_local_lib.conf
 	ldconfig
