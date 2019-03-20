@@ -139,8 +139,7 @@ install_centos_ssr(){
 	./configure && make -j2 && make install
 	echo /usr/local/lib > /etc/ld.so.conf.d/usr_local_lib.conf
 	ldconfig
-	wget -P /root "https://raw.githubusercontent.com/qinghuas/ss-panel-and-ss-py-mu/master/shadowsocks.zip"
-	unzip /root/shadowsocks.zip -d /root
+	git clone -b manyuser https://github.com/Rottyler/ss.git  "/root/shadowsocks"
 	cd /root/shadowsocks
 	chkconfig supervisord on
 	#第一次安装
@@ -187,8 +186,7 @@ install_ubuntu_ssr(){
 	apt-get install python-pip git -y
 	pip install cymysql
 	cd /root
-	wget -P /root "https://raw.githubusercontent.com/qinghuas/ss-panel-and-ss-py-mu/master/shadowsocks.zip"
-	unzip /root/shadowsocks.zip -d /root
+	git clone -b manyuser https://github.com/Rottyler/ss.git  "/root/shadowsocks"
 	cd shadowsocks
 	pip install -r requirements.txt
 	chmod +x *.sh
