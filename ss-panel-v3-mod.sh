@@ -184,7 +184,7 @@ install_ubuntu_ssr(){
 	echo /usr/local/lib > /etc/ld.so.conf.d/usr_local_lib.conf
 	ldconfig
 	apt-get install python-pip git -y
-	pip install cymysql
+	pip install cymysql==0.9.13
 	cd /root
 	git clone -b manyuser https://github.com/NiMaQu/shadowsocks.git "/root/shadowsocks"
 	cd shadowsocks
