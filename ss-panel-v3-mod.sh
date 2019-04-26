@@ -200,7 +200,7 @@ install_node(){
 	echo "#############################################################"
 	echo "# One click Install Shadowsocks-Python-Manyuser             #"
 	echo "# Github: https://github.com/mmmwhy/ss-panel-and-ss-py-mu   #"
-	echo "# Author: Ryci forked from 91vps                            #"
+	echo "# Author: Ryci fork from 91vps                              #"
 	echo "#############################################################"
 	echo
 	#Check Root
@@ -275,7 +275,7 @@ install_node_db(){
 	echo "#############################################################"
 	echo "# One click Install Shadowsocks-Python-Manyuser             #"
 	echo "# Github: https://github.com/mmmwhy/ss-panel-and-ss-py-mu   #"
-	echo "# Author: Ryci forked from 91vps                            #"
+	echo "# Author: Ryci fork from 91vps                              #"
 	echo "#############################################################"
 	echo
 	#Check Root
@@ -349,7 +349,7 @@ install_node_db(){
 	echo "#############################################################"
 	echo "# 安装完成，节点即将重启使配置生效                             #"
 	echo "# Github: https://github.com/mmmwhy/ss-panel-and-ss-py-mu   #"
-	echo "# Author: Ryci forked from 91vps                            #"
+	echo "# Author: Ryci fork from 91vps                              #"
 	echo "#############################################################"
 	reboot now
 }
@@ -389,11 +389,11 @@ echo
 echo "#############################################################"
 echo "# One click Install SS-panel and Shadowsocks-Py-Mu          #"
 echo "# Github: https://github.com/mmmwhy/ss-panel-and-ss-py-mu   #"
-echo "# Author: 91vps                                             #"
+echo "# Author: Ryci fork from 91vps                              #"
 echo "# Please choose the server you want                         #"
 echo "# 1  SS-V3_mod_前端+后端一键安装                             #"
 echo "# 2  后端节点webapi对接模式                                  #"
-echo "# 3  后端节点数据库对接模式                                   #"
+echo "# 3  后端节点数据库对接模式（推荐）                           #"
 echo "#############################################################"
 echo
 num=$1
