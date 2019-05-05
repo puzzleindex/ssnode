@@ -318,8 +318,8 @@ install_node_db(){
 	cd /root/shadowsocks
 	echo -e "modify Config.py...\n"
 	sed -i "s#'modwebapi'#'glzjinmod'#" /root/shadowsocks/userapiconfig.py #改成数据库对接
-	MU_SUFFIX=${MU_SUFFIX:-"jd.hk"}
-	sed -i "s#MU_SUFFIX = 'jd.hk'#MU_SUFFIX = '${MU_SUFFIX}'#" /root/shadowsocks/userapiconfig.py
+	MU_SUFFIX=${MU_SUFFIX:-"zhaoj.in"}
+	sed -i "s#MU_SUFFIX = 'zhaoj.in'#MU_SUFFIX = '${MU_SUFFIX}'#" /root/shadowsocks/userapiconfig.py
 	MYSQL_HOST=${MYSQL_HOST:-"http://127.0.0.1"}
 	sed -i "s#MYSQL_HOST = '127.0.0.1'#MYSQL_HOST = '${MYSQL_HOST}'#" /root/shadowsocks/userapiconfig.py
 	MYSQL_DB=${MYSQL_DB:-"root"}
