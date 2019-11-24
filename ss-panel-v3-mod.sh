@@ -239,7 +239,8 @@ install_node(){
 	install_ssr_for_each
 	cd /root/shadowsocks
 	echo -e "modify Config.py...\n"
-	sed -i "s#'zhaoj.in'#'jd.hk'#" /root/shadowsocks/userapiconfig.py
+	MU_SUFFIX=${MU_SUFFIX:-"zhaoj.in"}
+	sed -i "s#MU_SUFFIX = 'zhaoj.in'#MU_SUFFIX = '${MU_SUFFIX}'#" /root/shadowsocks/userapiconfig.py
 	Userdomain=${Userdomain:-"http://127.0.0.1"}
 	sed -i "s#https://zhaoj.in#${Userdomain}#" /root/shadowsocks/userapiconfig.py
 	Usermukey=${Usermukey:-"mupass"}
