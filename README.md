@@ -20,7 +20,7 @@ ___
     MYSQL_HOST=数据库地址 MYSQL_DB=数据库库名 MYSQL_USER=数据库用户名 MYSQL_PASS=数据库密码 NODE_ID=节点ID
     或者输入你的Webapi信息
     domain=前端域名（需要带上http or https） mukey=前端config设置的mu_key NODE_ID=节点ID
-————
+———
     第四步
     等待安装完成
     
