@@ -7,7 +7,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/puzzleindex/ssn
 
 ### 使用方法
      第一步：
-     1  SS-V3_mod_前端+后端一键安装
+     1  SS-V3_mod_前端+后端一键安装（应该不大好使，最好自己手动搭）
      2  后端节点webapi对接模式
      3  后端节点数据库对接模式（推荐）
      选择你需要的对接模式
